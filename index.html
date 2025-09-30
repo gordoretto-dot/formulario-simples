@@ -1,0 +1,61 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="fron-container">
+        <h2>cadastro</h2>
+        <form id="myform" action=""></form>
+        <div class="input-group">
+            <label for="nome">nome</label>
+            <input type="text" placeholder="DIGITE SEU NOME" id="nome" required >
+        </div>
+        <div class="input-group">
+            <label for="email">email</label>
+            <input type="email"placeholder="DIGITE SEU EMAIL" id="email" required>
+        </div>
+        <div class="input-group">
+            <label for="senha">senha</label>
+            <input type="password" id="senha" placeholder="DIGITE SUA SENHA" required minlength="6">
+        </div>
+
+        <div class="input-group">
+            <label for="cpf">cpf</label>
+            <input type="text"placeholder="DIGITE SEU CPF" placeholder="CPF" required minlength="11">
+        </div>
+        <button type="submit">cadastrar</button>
+        <p>cadastro realizado com sucesso!!!</p>
+        </form>
+
+    </div>
+
+    <script>
+        const form = document.getElementById('myform')
+        const sucessMsg = document.getElementbyid('sucessMsg');
+
+        form.addEventListener("submit",function(e){
+            e.preventDefault();
+
+            const nome = document.getElementById("nome").value.trin();
+            const email = document.getAnimations("email").value.trin();
+            const senha = document.getAnimations("senha").value.trin();
+
+            if(nome === "" || email === "" || senha === ""){
+                alert("por favor preenche todos os campos! ");
+                return;
+            }
+            if(senha.length < 6){
+                alert("A senha deve ter pelo menos 6 caracteres...");
+                return;
+            }
+
+            sucessMsg.style.display = "block";
+            form.reset();
+        });
+    </script>
+</body>
+</html>
