@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg,#ffffff, #b55c5c, #ff0000);
+    background: linear-gradient(135deg,#8b5ae6, #e1b5ff, #dfb0e9);
 }
 
 .form-container {
@@ -49,7 +49,7 @@ animation: fadeln is ease-in-out;
 }
 
 .input-group input:focus{
-    border-color: #ff0000;
+    border-color: #c430e9;
     box-shadow: 0 0 11px rgb(106, 17, 203, 0,3);
 }
 
@@ -58,7 +58,7 @@ button {
     padding: 12px;
     border: nome;
     border-radius: 10px;
-    background: linear-gradient(135deg, #ff0101,#cc6363, #ffffff );
+    background: linear-gradient(135deg, #d32cf5,#ba52eb, #d58ae4 );
     color: #000000;
     font-size: 16px;
     cursor: pointer;
@@ -67,7 +67,7 @@ button {
 
 button:hover{
     transform: scale(1.05);
-    box-shadow: 0 5px rgb(37, 117, 252, 0.4);
+    box-shadow: 0 5px rgba(46, 8, 71, 0.4);
 }
 
 .message{
